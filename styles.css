@@ -2,19 +2,30 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 }
 
 body {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
-  padding: 0 150px;
+}
+
+header, footer, 
+.hero-section {
+  background-color: #1F2937;
 }
 
 header {
   display: flex;
   justify-content: space-between;
-  padding: 20px 0;
+  padding: 20px 250px;
+}
+
+.logo {
+  color: #f9faf8;
+  font-size: 24px;
+  font-weight: 700;
 }
 
 header ul {
@@ -22,12 +33,178 @@ header ul {
   list-style-type: none;
   gap: 24px;
 }
-
+header a, 
+.hero-section .secondary-text  {
+  color: #e5e7eb;
+  font-size: 18px;
+}
 header a {
   text-decoration: none;
-  
 }
 
 .main {
   flex: 1;
+}
+
+.main > div {
+  padding-left: 250px;
+  padding-right: 250px;
+}
+
+.hero-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 450px;
+  color: white;
+}
+
+.hero-section div {
+  width: 450px;
+  height: 250px;
+}
+
+.hero-section .image {
+  flex: none;
+  overflow: hidden;
+
+}
+
+.hero-section img {
+  width: 100%;
+  height: auto;
+}
+
+
+
+.hero-section .main-text {
+  font-size: 48px;
+  color: #f9faf8;
+  font-weight: 900;
+}
+
+.hero-section button {
+  margin-top: 12px;
+  background-color: #3882f6;
+  color: #f9faf8;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 32px;
+  border-radius: 8px;
+  border-width: 0;
+}
+
+.info-section {
+  height: 450px;
+}
+
+.info-section h2 {
+  text-align: center;
+  margin: 40px 0;
+  color: #1F2937;
+  font-weight: 900;
+  font-size: 36px;
+}
+
+.items {
+  display: flex;
+  justify-content: center;
+  gap: 48px;
+}
+
+.item {
+  width: 165px;
+}
+
+.item-image {
+  height: 165px;
+  border: 4px solid #3882f6;
+  border-radius: 16px;
+  margin-bottom: 8px;
+  overflow: hidden;
+}
+
+.item-image img {
+  width: 100%;
+  height: auto;
+}
+
+.item .description {
+  text-align: center;
+  font-size: 18px;
+  color: #6b6b6b;
+}
+
+.main .quote-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 420px;
+  background-color: #e5e7eb;
+  padding: 50px 360px
+}
+
+.quote {
+  align-self: center;
+  font-size: 36px;
+  font-weight: 300;
+  font-style: italic;
+  color: #1F2937;
+}
+.signature {
+  align-self: flex-end;
+  color: #1F2937;
+  font-weight: 900;
+  font-size: 22px;
+}
+
+.main .sign-up-section {
+  display: flex;
+  height: 350px;
+  align-items: center;
+}
+
+.sign-up-container {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #3882f6;
+  padding: 48px 108px;
+  border-width: 0;
+  border-radius: 8px;
+}
+
+.large-sign-up-text {
+  color: white;
+  font-size: 23px;
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.small-sign-up-text {
+  color: #e5e7eb;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.sign-up-container button {
+  color: white;
+  background-color: #3882f6;
+  border: 2.5px solid white;
+  border-radius: 8px;
+  padding: 4px 32px;
+  height: 36px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 36px;
+  color: #e5e7eb;
+  font-size: 18px;
+  font-weight: 400;
 }
